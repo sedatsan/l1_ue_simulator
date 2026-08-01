@@ -1,4 +1,5 @@
 # 6G L1 UE Simulator
+[![Agentic AI Ready](https://img.shields.io/badge/Agentic_AI_Ready-AGENTS.md-blue)](AGENTS.md)
 
 > **Project Summary:**  
 > This is a high-performance C++20 MAC layer simulator mimicking 6G User Equipment (UE) operations. It features a lock-free Round-Robin resource block scheduler and streams real-time telemetry via Unix Domain Sockets. The codebase enforces strict MISRA-inspired warnings (`-Wall -Wextra -Wpedantic -Werror`), utilizes standard Pitchfork layout, and builds deterministically with CMake.
@@ -53,3 +54,6 @@ Unit tests are integrated via CTest:
 ```bash
 cd build && ctest --output-on-failure
 ```
+
+## Agentic AI Development
+This repository is fully compliant with the [AGENTS.md](https://agents.md) open standard. It includes strict, drop-in operating instructions designed to correctly guide autonomous AI coding agents (such as Cursor, Devin, Copilot, or Antigravity) across the C++20 constraints of this codebase. By providing explicit boundaries, the AI is prevented from hallucinating architectural decisions or making non-deterministic fast-path memory allocations.
