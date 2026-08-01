@@ -34,6 +34,14 @@ cmake ..
 cmake --build .
 ```
 
+### Docker (Containerization)
+For a cloud-native workflow, you can build and run the simulator using Docker:
+
+```bash
+docker build -t l1_ue_simulator .
+docker run --rm -v /tmp:/tmp l1_ue_simulator
+```
+
 ## Usage
 Run the simulator binary from the build directory. It will open `/tmp/mac_sim.sock` for IPC telemetry and run indefinitely until `SIGINT`.
 ```bash
